@@ -1,0 +1,101 @@
+html, body, header, nav, h1, a, ul, li,
+strong, main, button, i, section, img, div,
+h2, p, form, fieldset, label, input, textarea,
+span, article, footer, time, small {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: sans-serif;
+    color: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    vertical-align: inherit;
+    box-sizing: inherit;
+    background: transparent;
+    list-style: none;
+}
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 10px 10px 20px;
+}
+
+.clock-container {
+    font-size: 28px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    width: 550px;
+    height: 94px;
+    border: 2px solid black;
+    margin: 10px 20px 20px 20px;
+    padding: 10px;
+    background-color: orange;
+}
+
+.time, .date {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.interactive {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabs-headers {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.tabs-headers > li {
+    width: 65px;
+    border-top: 2px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    padding-top: 4px;
+    background-color: lightblue;
+
+}
+.tabs-headers > li:first-child {
+    border-left: 2px solid black;
+}
+
+.tabs-headers > li:last-child {
+    border-right: 2px solid black;
+}
+
+.tabs-headers > .active {
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.tabs-headers > li:hover {
+    background-color: black;
+    color: white;
+}
+
+.tabs-content {
+    font-weight: bold;
+    background-color: lightblue;
+    color: white;
+    height: 192px;
+    border: 2px solid black;
+    border-top: none;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
